@@ -26,6 +26,7 @@
     "watch": "babel -w src --out-dir . --ignore **/__tests__",
     "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn publish && git push --follow-tags; fi"
   },
+  "install": "npm run build",
   "peerDependencies": {
     "gatsby": "^2.0.0"
   },
