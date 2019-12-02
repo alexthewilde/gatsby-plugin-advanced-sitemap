@@ -242,6 +242,7 @@ exports.onPostBuild = async ({ graphql, pathPrefix }, pluginOptions) => {
     //
     //const indexSitemapFile = path.join(PUBLICPATH, pathPrefix, INDEXFILE)
     //const resourcesSitemapFile = path.join(PUBLICPATH, pathPrefix, RESOURCESFILE)
+    console.log('~~~ gatsby-plugin-advanced-sitemap: ignore pathPrefix ~~~')
     const indexSitemapFile = path.join(PUBLICPATH, INDEXFILE)
     const resourcesSitemapFile = path.join(PUBLICPATH, RESOURCESFILE)
 
